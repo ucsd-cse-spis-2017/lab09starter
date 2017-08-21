@@ -1,0 +1,16 @@
+Python 2.7.10 (default, Aug 10 2015, 13:22:19) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-4)] on linux2
+Type "copyright", "credits" or "license()" for more information.
+>>> ================================ RESTART ================================
+>>> 
+Reading Data...
+done
+>>> data[100]
+{'beer/style': 'Low Alcohol Beer', 'beer/ABV': 0.4, 'beer/beerId': '5719', 'review/timeStruct': {'wday': 6, 'isdst': 0, 'mday': 25, 'hour': 16, 'min': 26, 'sec': 59, 'year': 2010, 'yday': 115, 'mon': 4}, 'review/aroma': 2.0, 'review/appearance': 3.0, 'review/timeUnix': 1272212819, 'review/palate': 2.0, 'review/taste': 1.0, 'beer/name': 'Old Milwaukee Non Alcoholic', 'beer/brewerId': '447', 'review/overall': 1.0, 'review/text': 'Quite possibly the worst "beer" I\'ve had ever. Drank straight from a 12 oz can.\t\tAppearance - Your basic American lager, yellow and fizzy.\t\tSmell - Had an odd bread like scent, no detectable hops.\t\tTaste - Awful, absolutely awful. It was the taste you get in your mouth when your eating Wonder Bread and it gets stuck to the roof of your mouth.\t\tMouthfeel - Very watery\t\tDrinkability - You have to be kidding me, why would anyone even finish this one?', 'user/profileName': 'RichieS2'}
+>>> data_review = [d['review/overall' for d in data]
+	       
+SyntaxError: invalid syntax
+>>> data_review = [d['review/overall'] for d in data]
+>>> data_review[4]
+2.0
+>>> 
