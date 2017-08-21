@@ -19,6 +19,6 @@ if __name__ == "__main__":
 
   print("review".rjust(5), "beer name".rjust(50), "reviewer".rjust(20))
   for i in range(10):
-    print (niceReviewSummary(data[i]))
+    print (niceReviewSummary(data[i]).encode('ascii','ignore'))
 
   print("done")
