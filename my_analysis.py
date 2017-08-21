@@ -14,11 +14,11 @@ def niceReviewSummary(review):
 
 if __name__ == "__main__":
 
-  print "Reading Data..."
+  print("Reading Data...")
   data = list(parseData("http://jmcauley.ucsd.edu/cse255/data/beer/non-alcoholic-beer.json"))
 
-  print  "review".rjust(5), "beer name".rjust(50), "reviewer".rjust(20)
+  print("review".rjust(5), "beer name".rjust(50), "reviewer".rjust(20))
   for i in range(10):
     print niceReviewSummary(data[i])
 
-  print "done"
+  print("done")
