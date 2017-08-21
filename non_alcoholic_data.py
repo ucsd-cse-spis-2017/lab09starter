@@ -1,7 +1,7 @@
-import urllib
+import urllib.request
 
 def parseData(fname):
-    for l in urllib.urlopen(fname):
+    for l in urllib.request.urlopen(fname):
         yield eval(l)
 
 if __name__ == "__main__":
